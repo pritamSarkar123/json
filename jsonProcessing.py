@@ -35,10 +35,10 @@ print(dataFour)
 
 ########### dumping dictionary to json 
 with open('two.txt','w',encoding="utf-8") as to_json_in_txt:
-	json.dump(dataOne,to_json_in_txt,ensure_ascii=False)
+	json.dump(dataOne,to_json_in_txt,ensure_ascii=False) #non ascii values will be preserved
 
 with open('two.json','w',encoding="utf-8") as to_json_in_json:
-	json.dump(dataOne,to_json_in_json,ensure_ascii=False)
+	json.dump(dataOne,to_json_in_json,ensure_ascii=False) #non ascii values will be preserved
 
 """
 	json.load()->loading json to dictionary from json or txt file
